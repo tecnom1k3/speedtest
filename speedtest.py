@@ -17,4 +17,3 @@ for row in reader:
 	row[6] = decimal.Decimal(row[6])/1000000
 	row[7] = decimal.Decimal(row[7])/1000000
 	print csv2string(row)
-    #print '"{}","{}","{}","{}","{}","{}","{}","{}","{}","{}"'.format(row[0], row[1], row[2], row[3], row[4], row[5], decimal.Decimal(row[6])/1000000, decimal.Decimal(row[7])/1000000, row[8], row[9])
