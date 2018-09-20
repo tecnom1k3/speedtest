@@ -4,6 +4,7 @@ import StringIO
 import csv
 import decimal
 import subprocess
+import StringIO
 
 def csv2string(data):
     si = StringIO.StringIO()
