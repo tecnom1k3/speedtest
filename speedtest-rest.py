@@ -28,7 +28,7 @@ for row in reader:
 	row[6] = decimal.Decimal(row[6])/1000000
 	row[7] = decimal.Decimal(row[7])/1000000
 	#payload = {"server_id": row[0],"sponsor": row[1],"server_name": row[2],"timestamp": row[3],"distance": row[4],"ping": row[5],"download": row[6],"upload": row[7],"share": row[8],"ip_address": row[9]}
-	payload = "{\n  \"server_id\": 1782,\n  \"sponsor\": \"Comcast\",\n  \"server_name\": \"Seattle, WA\",\n  \"timestamp\": \"2018-09-21T05:10:01.930144Z\",\n  \"distance\": 15.042833314578802,\n  \"ping\": 25.612,\n  \"download\": 82.68025586921611,\n  \"upload\": 11.582651480139456,\n  \"share\": \"http://www.speedtest.net/result/7653589584.png\",\n  \"ip_address\": \"73.169.246.76\"\n}"
+	payload = "{  \"server_id\": 1782,  \"sponsor\": \"Comcast\",  \"server_name\": \"Seattle, WA\",  \"timestamp\": \"2018-09-21T05:10:01.930144Z\",  \"distance\": 15.042833314578802,  \"ping\": 25.612,  \"download\": 82.68025586921611,  \"upload\": 11.582651480139456,  \"share\": \"http://www.speedtest.net/result/7653589584.png\",  \"ip_address\": \"73.169.246.76\"}"
 	r = requests.request("PUT", url, data=payload, headers=headers)
 	print csv2string(row)
 	print r.status_code
