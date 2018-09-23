@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
+import StringIO
 import csv
 import decimal
-import subprocess
-import StringIO
-import requests
 import os
+import subprocess
 
+import requests
 from dotenv import load_dotenv
 
 load_dotenv(dotenv_path='.env')
