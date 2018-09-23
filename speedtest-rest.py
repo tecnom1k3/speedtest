@@ -17,8 +17,9 @@ def csv2string(data):
     return si.getvalue().strip('\r\n')
 
 endpoint = os.getenv("LOG_ENPOINT")
+speedtestCliBin = os.getenv("SPEED_TEST_CLI_BIN")
 
-response = subprocess.Popen('/home/pi/speedtest/bin/speedtest-cli --csv  --share', shell=True, stdout=subprocess.PIPE).stdout.read()
+response = subprocess.Popen(speedtestCliBin + ' --csv  --share', shell=True, stdout=subprocess.PIPE).stdout.read()
 reader = csv.reader([response], dialect='excel')
 for row in reader:
 	row[6] = decimal.Decimal(row[6])/1000000
