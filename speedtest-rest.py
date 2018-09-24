@@ -5,11 +5,13 @@ import csv
 import decimal
 import os
 import subprocess
+from os.path import join, dirname
 
 import requests
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path='.env')
+dotEnvPath = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path=dotEnvPath)
 
 
 def csv2string(data):
