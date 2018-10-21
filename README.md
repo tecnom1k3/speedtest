@@ -1,0 +1,2 @@
+# speedtest
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/94d3cb0616c543f9bd4cd709d706bc5a)](https://app.codacy.com/app/tecnom1k3/speedtest?utm_source=github.com&utm_medium=referral&utm_content=tecnom1k3/speedtest&utm_campaign=Badge_Grade_Dashboard)
