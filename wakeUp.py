@@ -43,8 +43,8 @@ if (currentMinute + 1) % 20 == 0:
             except ValueError:
                 print str(datetime.datetime.now()) + " - response is not JSON"
                 continue
-else:
-    print str(datetime.datetime.now()) + " - but mom..., 1 more minute please..."
+# else:
+#     print str(datetime.datetime.now()) + " - but mom..., 1 more minute please..."
 
 if awake:
     print str(datetime.datetime.now()) + " - successfully awake!"
